@@ -26,12 +26,12 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="/help" className="footer-link">
+                  <a href="./#/Help2" className="footer-link">
                     Contact Us
                   </a>
                 </li>
                 <li>
-                  <a href="/privacy" className="footer-link">
+                  <a href="./#/Privacy2" className="footer-link">
                     Privacy Policy
                   </a>
                 </li>

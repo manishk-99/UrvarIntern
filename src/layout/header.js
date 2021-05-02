@@ -18,7 +18,7 @@ const Header = () => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Navbar className="navbar" light expand="md">
+    <Navbar className="navbar container-4 w-container" light expand="md">
       <NavbarBrand>
         <a className="Link" href="https://www.urvar.in/">
           <img
@@ -35,27 +35,31 @@ const Header = () => {
           {
             <>
               <NavItem>
-                <NavLink tag={Link} to="/Signup" className="text-white">
+                <NavLink tag={Link} to="/" className="text-white">
                   Home
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} to="/Signin" className="text-white">
+                <NavLink tag={Link} to="./Supply2" className="text-white">
                   Supply
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} to="/Signup" className="text-white">
+                <NavLink tag={Link} to="./Demand2" className="text-white">
                   Demand
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} to="/Signin" className="text-white">
+                <NavLink
+                  tag={Link}
+                  to="./Certification2"
+                  className="text-white"
+                >
                   Certification
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} to="/Signin" className="text-white">
+                <NavLink tag={Link} to="./Help2" className="text-white">
                   Help
                 </NavLink>
               </NavItem>
