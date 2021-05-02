@@ -3,8 +3,9 @@ import { useSupplyDemand } from "../context/SupplyDemandProvider";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { db } from "../firebase";
-export const MyModal = () => {
-  const { modal, setModal } = useSupplyDemand();
+
+export const MyModal2 = () => {
+  const { modal2, setModal2 } = useSupplyDemand();
 
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -15,7 +16,7 @@ export const MyModal = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    db.collection("demand")
+    db.collection("Supply")
       .add({
         name: name,
         phone: phone,
@@ -34,16 +35,16 @@ export const MyModal = () => {
   return (
     <div className="modal-container">
       <div className="myModal">
-      <ToastContainer />
+        <ToastContainer />
         <button
           className=" btn btn-sm btn-danger closeBtn"
-          onClick={() => setModal(false)}
+          onClick={() => setModal2(false)}
         >
           {" "}
           X{" "}
         </button>{" "}
         <form class="form" onSubmit={handleSubmit}>
-          <h2>Book your demand</h2>
+          <h2>Supply Slot</h2>
 
           <label for="Name-3" class="field-label">
             Name
@@ -79,12 +80,12 @@ export const MyModal = () => {
             Quantity
           </label>
           <input
-            type="text"
+            type="tel"
             class="text-field-2 w-input"
             maxlength="256"
             name="quantity"
             data-name="Phone Number 2"
-            placeholder="In Quintal"
+            placeholder="+91"
             id="Phone-Number-2"
             required=""
             value={quantity}

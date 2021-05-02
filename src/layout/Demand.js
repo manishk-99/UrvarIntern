@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { useSupplyDemand } from "../context/SupplyDemandProvider";
-import { MyModal } from "./MyModal";
+import { MyModal2 } from "./MyModal2";
 const Demand = () => {
-  const { modal, setModal } = useSupplyDemand();
+  const { modal2, setModal2 } = useSupplyDemand();
   return (
     <div>
-      {modal ? <MyModal /> : ""}
-      <button className="btn btn-md btn-success" onClick={() => setModal(true)}>
+      {modal2 ? <MyModal2 /> : ""}
+      <button
+        className="btn btn-md btn-success"
+        onClick={() => setModal2(true)}
+      >
         I have a Supply
       </button>
       <div class="section-2">

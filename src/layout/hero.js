@@ -16,7 +16,7 @@ const Hero = () => {
                 <br />
                 &amp; traders.
               </h2>
-              <a href="/supply" className="button w-button">
+              <a href="./#/Supply2" className="button w-button">
                 {" "}
                 See Supply
               </a>

@@ -3,12 +3,11 @@ import { createContext, useContext, useState } from "react";
 export const SupplyDemandContext = createContext();
 
 export const SupplyDemandProvider = ({ children }) => {
-  const [supply, setSupply] = useState([]);
-  const [demand, setdemand] = useState([]);
   const [modal, setModal] = useState(false);
+  const [modal2, setModal2] = useState(false);
   return (
     <SupplyDemandContext.Provider
-      value={{ supply, setSupply, demand, setdemand, modal, setModal }}
+      value={{ modal, setModal, modal2, setModal2 }}
     >
       {children}
     </SupplyDemandContext.Provider>

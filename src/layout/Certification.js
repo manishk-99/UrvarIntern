@@ -12,7 +12,7 @@ const Certification = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    db.collection("contacts")
+    db.collection("Certification")
       .add({
         firstname: firstname,
         lastname: lastname,
@@ -125,30 +125,6 @@ const Certification = () => {
                 className="button-3 w-button"
               />
             </form>
-            {/* <div className="success-message w-form-done">
-              <div className="success-text">
-                Thank you! (This is what will display after people opt into your
-                funnel which can be edited within the form settings to whatever
-                you want). <br />
-              </div>
-              <h3 className="success-heading">Want to learn more?</h3>
-              <div className="success-text">
-                Join the <strong>Web Design for Entrepreneurs</strong> Facebook
-                Group to learn more about Webflow, Sketch, ClickFunnels,
-                business, and more.
-                <br />
-              </div>
-              <a
-                href="https://www.facebook.com/groups/webdesignpreneurs/"
-                target="_blank"
-                className="button-3 w-button"
-              >
-                Join the Facebook group!
-              </a>
-            </div>
-            <div className="w-form-fail">
-              <div>Oops! Something went wrong while submitting the form.</div>
-            </div> */}
           </div>
         </div>
         <img
