@@ -2,8 +2,8 @@ import React from "react";
 const Privacy = () => {
   return (
     <div>
-      <div class="container-14 w-container">
-        <div class="html-embed w-embed">
+      <div className="container-14 w-container">
+        <div className="html-embed w-embed">
           <h1>Privacy Policy</h1>
           <p>
             This Privacy Policy describes Our policies and procedures on the
@@ -238,8 +238,8 @@ const Privacy = () => {
           </ul>
         </div>
       </div>
-      <div class="w-container">
-        <div class="html-embed-2 w-embed">
+      <div className="w-container">
+        <div className="html-embed-2 w-embed">
           <p>
             <strong>For the performance of a contract:</strong> the development,
             compliance and undertaking of the purchase contract for the
