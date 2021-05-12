@@ -34,7 +34,7 @@ const Certification = () => {
         <div id="w-node-6f4af3f6e12f-aa59d0f9" className="opt-in-content">
           <div className="text-caps">Reach out to us</div>
           <h1 className="heading-1">
-            Looking for <br />‍<span className="text-span-5">organic</span>
+            Looking for <br />‍<span className="text-span-5">organic </span>
             certification
           </h1>
           <p className="text">
